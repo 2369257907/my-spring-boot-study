@@ -1,0 +1,7 @@
+##1、为什么可以使用springstudy这个对象
+# springstudy是我们在MultienvConfig类中通过@Component和@ConfigurationProperties自定义的对象
+
+springstudy:
+  demoname: multienv-dev123455
+server:
+  port: 8081

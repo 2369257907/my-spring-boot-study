@@ -1,0 +1,4 @@
+springstudy:
+  demoname: test
+server:
+  port: 8083

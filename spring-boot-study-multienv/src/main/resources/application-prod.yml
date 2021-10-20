@@ -1,0 +1,4 @@
+springstudy:
+  demoname: multienv-prod
+server:
+  port: 8082
