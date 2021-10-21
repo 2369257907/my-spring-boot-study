@@ -8,7 +8,8 @@
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 
-3、输出页面：http://localhost:8083/student
+3、输出页面：
+             http://localhost:8083/student
 
 
 	     http://localhost:8083/sample
