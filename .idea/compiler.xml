@@ -9,6 +9,7 @@
         <module name="spring-boot-study-multienv" />
         <module name="helloworld" />
         <module name="service" />
+        <module name="spring-boot-study-banner" />
       </profile>
     </annotationProcessing>
   </component>
@@ -16,6 +17,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="helloworld" options="-parameters" />
       <module name="service" options="-parameters" />
+      <module name="spring-boot-study-banner" options="-parameters" />
       <module name="spring-boot-study-multienv" options="-parameters" />
     </option>
   </component>
