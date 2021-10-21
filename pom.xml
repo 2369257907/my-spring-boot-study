@@ -12,5 +12,6 @@
         <module>spring-boot-study-helloworld</module>
         <module>spring-boot-study-helloworld-service</module>
         <module>spring-boot-study-multienv</module>
+        <module>spring-boot-study-banner</module>
     </modules>
 </project>
