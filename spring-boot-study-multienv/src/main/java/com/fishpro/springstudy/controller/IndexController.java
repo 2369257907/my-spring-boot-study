@@ -20,6 +20,6 @@ public class IndexController {
     @RequestMapping("/")
     String index(){
         logger.info(multienvConfig.getDemoname());
-        return "index";
+        return "index" ;
     }
 }
