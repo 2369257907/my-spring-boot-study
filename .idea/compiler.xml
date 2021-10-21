@@ -6,19 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-study-multienv" />
+        <module name="thymeleaf" />
         <module name="helloworld" />
-        <module name="service" />
         <module name="spring-boot-study-banner" />
+        <module name="service" />
+        <module name="spring-boot-study-multienv" />
+        <module name="spring-boot-study-restcontroller" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="restcontroller" target="1.8" />
+      <module name="spring-boot-study-restcontroller" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="helloworld" options="-parameters" />
+      <module name="restcontroller" options="-parameters" />
       <module name="service" options="-parameters" />
       <module name="spring-boot-study-banner" options="-parameters" />
       <module name="spring-boot-study-multienv" options="-parameters" />
+      <module name="spring-boot-study-restcontroller" options="-parameters" />
+      <module name="thymeleaf" options="-parameters" />
     </option>
   </component>
 </project>

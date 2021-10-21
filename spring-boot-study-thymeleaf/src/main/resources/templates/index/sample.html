@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf简单示例</title>
+</head>
+<body>
+
+<p style="background-color: #c7ddef">
+    th：text输出字符串内容
+</p>
+
+<p th:text="${user.username}"></p>
+
+
+<p style="background-color: #c7ddef">
+    th:each循环标签
+</p>
+
+
+<p style="background-color: #c7ddef">分别输出users中的user对象的属性值</p>
+<p th:each=" userobject : ${users}">
+    <span th:text="${userobject.username}"></span>
+    <span th:text="${userobject.sex}"></span>
+    <span th:text="${userobject.birthday}"></span>
+</p>
+
+
+
+<p style="background-color: #c7ddef">在一起输出users的所有对象的属性值</p>
+<p th:each="user : ${users}">
+    <a th:text="${user}"></a>
+</p>
+
+</body>
+</html>

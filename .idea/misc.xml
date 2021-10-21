@@ -9,7 +9,14 @@
         <option value="$PROJECT_DIR$/../spring-boot-study-helloworld-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-study-multienv/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-study-banner/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-boot-study-thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-study-thymeleaf/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/spring-boot-study-restcontroller/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">

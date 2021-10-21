@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 
+/**
+ * @author 86171
+ */
 @Controller
 public class IndexController {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());

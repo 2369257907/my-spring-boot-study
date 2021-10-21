@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html  lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p style="background-color: #c7ddef">分别输出studentList中的对象的属性</p>
+<p  th:each="student: ${studentList}">
+    <span th:text="${student.studentId}"></span>
+    <span th:text="${student.name}"></span>
+    <span th:text="${student.birthday}"></span>
+    <span th:text="${student.department}"></span>
+    <span th:text="${student.dormitory}"></span>
+</p>
+<p style="background-color: #c7ddef">在一起输出studentList中的对象的属性</p>
+<p th:each="student:${studentList}">
+    <span th:text="${student}"></span>
+</p>
+<p style="background-color: #c7ddef">单独输出获取的一个对象信息（即不是从studentList获取的对象的信息）</p>
+
+</body>
+</html>
