@@ -8,12 +8,13 @@ public class UserDTO {
     private String sex;
     private Date birthday;
 
-    public UserDTO(){}
+    public UserDTO() {
+    }
 
-    public UserDTO(String username,String sex,Date birthday){
-        this.username=username;
-        this.sex=sex;
-        this.birthday=birthday;
+    public UserDTO(String username, String sex, Date birthday) {
+        this.username = username;
+        this.sex = sex;
+        this.birthday = birthday;
     }
 
     public String getUsername() {

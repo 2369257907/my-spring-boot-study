@@ -1,0 +1,12 @@
+person:
+  id: 1
+  name: zhangsan
+  hobby: ['play','read','sleep']
+  family: ["Tom","Tony","John","Bob"]
+  pet:
+    type: cat
+    name: mimi2
+  map: [k1:v1,k2:v2]
+
+server:
+  port: 8091

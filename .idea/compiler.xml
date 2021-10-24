@@ -2,32 +2,40 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="thymeleaf" />
-        <module name="helloworld" />
+        <module name="spring-boot-study-diyerrpage" />
+        <module name="spring-boot-study-freemarker" />
+        <module name="configrurationProperties" />
         <module name="spring-boot-study-banner" />
-        <module name="service" />
+        <module name="spring-boot-study-log" />
+        <module name="throwable" />
         <module name="spring-boot-study-multienv" />
+        <module name="spring-boot-study-thymeleaf" />
         <module name="spring-boot-study-restcontroller" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="restcontroller" target="1.8" />
-      <module name="spring-boot-study-restcontroller" target="1.8" />
+      <module name="helloworld" target="1.8" />
+      <module name="service" target="1.8" />
+      <module name="spring-boot-study" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="configrurationProperties" options="-parameters" />
       <module name="helloworld" options="-parameters" />
-      <module name="restcontroller" options="-parameters" />
       <module name="service" options="-parameters" />
       <module name="spring-boot-study-banner" options="-parameters" />
+      <module name="spring-boot-study-diyerrpage" options="-parameters" />
+      <module name="spring-boot-study-freemarker" options="-parameters" />
+      <module name="spring-boot-study-log" options="-parameters" />
       <module name="spring-boot-study-multienv" options="-parameters" />
-      <module name="spring-boot-study-restcontroller" options="-parameters" />
-      <module name="thymeleaf" options="-parameters" />
+      <module name="spring-boot-study-thymeleaf" options="-parameters" />
+      <module name="throwable" options="-parameters" />
     </option>
   </component>
 </project>

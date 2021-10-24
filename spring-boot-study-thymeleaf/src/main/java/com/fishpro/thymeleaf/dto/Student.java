@@ -20,7 +20,8 @@ public class Student {
         this.department = department;
         this.dormitory = dormitory;
     }
-    public Student(){
+
+    public Student() {
 
     }
 

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class resonsecontroller {
     @GetMapping("/say")
-    public String say(){
+    public String say() {
         return "你成功了！";
     }
 }

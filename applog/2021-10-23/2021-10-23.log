@@ -1,0 +1,32 @@
+2021-10-23 00:16:56 -Starting LogApplication on desktop666666 with PID 1296 (C:\Users\86171\Desktop\spring-boot-study-master\spring-boot-study-master\spring-boot-study\spring-boot-study-log\target\classes started by 86171 in C:\Users\86171\Desktop\spring-boot-study-master\spring-boot-study-master\spring-boot-study)
+2021-10-23 00:16:56 -Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-10-23 00:16:56 -No active profile set, falling back to default profiles: default
+2021-10-23 00:16:59 -Started LogApplication in 3.288 seconds (JVM running for 5.356)
+2021-10-23 00:16:59 -This is a debug message
+2021-10-23 00:16:59 -This is an info message
+2021-10-23 00:16:59 -This is a warn message
+2021-10-23 00:16:59 -This is an error message
+2021-10-23 00:45:41 -Starting LogApplication on desktop666666 with PID 3216 (C:\Users\86171\Desktop\spring-boot-study-master\spring-boot-study-master\spring-boot-study\spring-boot-study-log\target\classes started by 86171 in C:\Users\86171\Desktop\spring-boot-study-master\spring-boot-study-master\spring-boot-study)
+2021-10-23 00:45:41 -Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-10-23 00:45:41 -No active profile set, falling back to default profiles: default
+2021-10-23 00:45:45 -Started LogApplication in 6.345 seconds (JVM running for 14.602)
+2021-10-23 00:45:45 -This is a debug message
+2021-10-23 00:45:45 -This is an info message
+2021-10-23 00:45:45 -This is a warn message
+2021-10-23 00:45:45 -This is an error message
+2021-10-23 02:20:09 -Starting LogApplication on desktop666666 with PID 4060 (C:\Users\86171\Desktop\spring-boot-study-master\spring-boot-study-master\spring-boot-study\spring-boot-study-log\target\classes started by 86171 in C:\Users\86171\Desktop\spring-boot-study-master\spring-boot-study-master\spring-boot-study)
+2021-10-23 02:20:09 -Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-10-23 02:20:09 -No active profile set, falling back to default profiles: default
+2021-10-23 02:20:12 -Started LogApplication in 4.271 seconds (JVM running for 10.476)
+2021-10-23 02:20:12 -This is a debug message
+2021-10-23 02:20:12 -This is an info message
+2021-10-23 02:20:12 -This is a warn message
+2021-10-23 02:20:12 -This is an error message
+2021-10-23 02:25:56 -Starting LogApplication on desktop666666 with PID 7012 (C:\Users\86171\Desktop\spring-boot-study-master\spring-boot-study-master\spring-boot-study\spring-boot-study-log\target\classes started by 86171 in C:\Users\86171\Desktop\spring-boot-study-master\spring-boot-study-master\spring-boot-study)
+2021-10-23 02:25:56 -Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-10-23 02:25:56 -No active profile set, falling back to default profiles: default
+2021-10-23 02:26:00 -Started LogApplication in 5.859 seconds (JVM running for 12.406)
+2021-10-23 02:26:00 -This is a debug message
+2021-10-23 02:26:00 -This is an info message
+2021-10-23 02:26:00 -This is a warn message
+2021-10-23 02:26:00 -This is an error message

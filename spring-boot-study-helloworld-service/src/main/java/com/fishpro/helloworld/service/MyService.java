@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class MyService {
-    public String message(){
+    public String message() {
         return "This is a message from another module called 'Spring-boot-helloWorld-service'";
     }
 }

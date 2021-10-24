@@ -13,8 +13,9 @@ public class IndexController {
 
     @Autowired
     MyService myService;
+
     @GetMapping("/say")
-    public String say(){
+    public String say() {
         return myService.message();
     }
 

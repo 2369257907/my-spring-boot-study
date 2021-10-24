@@ -11,10 +11,10 @@ import static org.assertj.core.api.Java6Assertions.assertThat;
 @RunWith(SpringRunner.class)
 public class MyServiceTest {
     @Autowired
-    private  MyService myService;
+    private MyService myService;
 
     @Test
-    public void contextLoads(){
+    public void contextLoads() {
         assertThat(myService.message()).isNotNull();
     }
 

@@ -8,7 +8,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
-
 /**
  * @author 86171
  */
@@ -17,9 +16,10 @@ public class IndexController {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
     @Autowired
     MultienvConfig multienvConfig;
-    @RequestMapping("/")
-    String index(){
+
+    @RequestMapping("/index")
+    String index() {
         logger.info(multienvConfig.getDemoname());
-        return "index" ;
+        return "index";
     }
 }
