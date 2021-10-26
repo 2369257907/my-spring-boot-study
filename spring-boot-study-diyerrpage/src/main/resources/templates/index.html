@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    这里是主页
+    <table border="1">
+        <tr>
+            <td>错误类型</td>
+            <td th:text="${msg}"></td>
+        </tr>
+        <tr>
+            <td>请求路径</td>
+            <td th:text="${url}"></td>
+        </tr>
+
+    </table>
+</body>
+</html>

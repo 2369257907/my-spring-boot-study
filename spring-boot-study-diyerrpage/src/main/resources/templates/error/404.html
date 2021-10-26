@@ -5,12 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-<p>From /resources/templates/error/404.html</p>
+<!--timesamp等数据都是发生404异常的时候springboot自动返回的，这些数据在浏览器中以页面的形式展示;
+    如果是通过postman访问的话，我们得到的是json类型的数据-->
+<p>From templates\error\404.html</p>
 
+<p> 你来到了一片没有知识的平原 </p>
 <table border="1">
     <tr>
         <td>timestamp</td>
-      <td th:text="${timestamp}"></td>
+        <td th:text="${timestamp}"></td>
     </tr>
     <tr>
         <td>status</td>
@@ -24,6 +27,7 @@
         <td>path</td>
         <td th:text="${path}"></td>
     </tr>
+
 </table>
 </body>
 </html>

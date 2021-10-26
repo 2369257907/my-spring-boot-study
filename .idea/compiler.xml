@@ -7,7 +7,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-study-diyerrpage" />
         <module name="spring-boot-study-freemarker" />
         <module name="configrurationProperties" />
         <module name="spring-boot-study-banner" />
@@ -16,17 +15,20 @@
         <module name="spring-boot-study-multienv" />
         <module name="spring-boot-study-thymeleaf" />
         <module name="spring-boot-study-restcontroller" />
+        <module name="diyerrpage" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="helloworld" target="1.8" />
       <module name="service" target="1.8" />
       <module name="spring-boot-study" target="1.5" />
+      <module name="spring-boot-study-diyerrpage" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="configrurationProperties" options="-parameters" />
+      <module name="diyerrpage" options="-parameters" />
       <module name="helloworld" options="-parameters" />
       <module name="service" options="-parameters" />
       <module name="spring-boot-study-banner" options="-parameters" />
