@@ -7,11 +7,8 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/../spring-boot-study-helloworld/pom.xml" />
-        <option value="$PROJECT_DIR$/../spring-boot-study-helloworld-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-study-multienv/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-study-banner/pom.xml" />
-        <option value="$PROJECT_DIR$/../spring-boot-study-thymeleaf/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-study-thymeleaf/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-study-log/pom.xml" />
         <option value="$PROJECT_DIR$/spring-study-configurationProperties/pom.xml" />
@@ -20,6 +17,8 @@
         <option value="$PROJECT_DIR$/spring-boot-study-freemarker/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-study-diyerrpage/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-study-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-study-aoplog/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-study-aoplog-me/pom.xml" />
       </list>
     </option>
   </component>
