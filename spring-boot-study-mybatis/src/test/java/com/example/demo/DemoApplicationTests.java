@@ -11,10 +11,11 @@ import java.sql.SQLException;
 class DemoApplicationTests {
     @Autowired
     DataSource dataSource;
+
     @Test
     void contextLoads() throws SQLException {
-        System.out.println("数据库连接驱动是："+dataSource.getClass());
-        System.out.println("数据库连"+dataSource.getConnection());
+        System.out.println("数据库连接驱动是：" + dataSource.getClass());
+        System.out.println("数据库连" + dataSource.getConnection());
     }
 
 }

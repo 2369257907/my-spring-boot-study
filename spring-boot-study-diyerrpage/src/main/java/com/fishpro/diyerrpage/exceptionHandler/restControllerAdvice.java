@@ -19,21 +19,21 @@ import java.util.Map;
 public class restControllerAdvice {
 
     @ExceptionHandler(Exception.class)
-    public Map HandleAllException(Exception ex , HttpRequest request){
+    public Map HandleAllException(Exception ex, HttpRequest request) {
 
         HashMap map = new HashMap(3);
-        map.put("status",0);
-        map.put("msg",ex);
-        map.put("url",request.getURI());
+        map.put("status", 0);
+        map.put("msg", ex);
+        map.put("url", request.getURI());
 
         return map;
     }
 
     @ExceptionHandler(MyException.class)
-    public Map HandleMyException(Exception ex){
+    public Map HandleMyException(Exception ex) {
         HashMap map = new HashMap(2);
-        map.put("status",-1);
-        map.put("msg",ex.toString());
+        map.put("status", -1);
+        map.put("msg", ex.toString());
 
         return map;
     }

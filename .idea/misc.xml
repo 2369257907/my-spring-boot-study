@@ -19,6 +19,8 @@
         <option value="$PROJECT_DIR$/spring-boot-study-mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-study-aoplog/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-study-aoplog-me/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-study-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>

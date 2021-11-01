@@ -11,7 +11,7 @@ public class IndexController {
     @Log("日志注解，配合WebAspect记录请求前、请求后、请求过程")
     @RequestMapping("/aop-log")
     @ResponseBody
-    public String log(String name){
+    public String log(String name) {
         return "this is return value";
     }
 }

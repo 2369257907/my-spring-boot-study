@@ -35,13 +35,14 @@ public class WebLogAspect {
     }
 
     @Before("logPointCut()")
-    public void  doBefore(JoinPoint joinPoint) throws Throwable{
+    public void doBefore(JoinPoint joinPoint) throws Throwable {
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
         logger.info("请求地址是：" + request.getRequestURI());
         logger.info("HttP METHOd " + request.getMethod());
         logger.info("参数 : " + Arrays.toString(joinPoint.getArgs()));
     }
+
     @Around("logPointCut()")
     public Object doAround(ProceedingJoinPoint pjp) throws Throwable {
         long startTime = System.currentTimeMillis();
@@ -51,7 +52,6 @@ public class WebLogAspect {
         System.out.println("change change1");
         return ob;
     }
-
 
 
 }

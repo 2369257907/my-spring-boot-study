@@ -17,10 +17,10 @@ import javax.servlet.http.HttpServletRequest;
 public class controllerAdvice {
 
     @ExceptionHandler(Exception.class)
-    public final ModelAndView handleAllExceptions(Exception ex, HttpServletRequest request){
+    public final ModelAndView handleAllExceptions(Exception ex, HttpServletRequest request) {
         ModelAndView mv = new ModelAndView();
-        mv.addObject("msg",ex);
-        mv.addObject("url",request.getRequestURI());
+        mv.addObject("msg", ex);
+        mv.addObject("url", request.getRequestURI());
         mv.setViewName("index");
         return mv;
     }

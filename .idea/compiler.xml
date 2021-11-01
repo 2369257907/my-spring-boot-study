@@ -7,7 +7,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="thymeleaf" />
         <module name="configrurationProperties" />
         <module name="spring-boot-study-restcontroller" />
         <module name="log" />
@@ -15,9 +14,11 @@
         <module name="demo" />
         <module name="diyerrpage" />
         <module name="springstudy" />
-        <module name="aoplog" />
+        <module name="thymeleaf" />
         <module name="spring-boot-study-freemarker" />
         <module name="spring-boot-study-multienv" />
+        <module name="spring-boot-study-redis" />
+        <module name="aoplog" />
         <module name="spring-boot-study-banner" />
         <module name="mybatis" />
         <module name="freemarker" />
@@ -25,12 +26,11 @@
         <module name="aoplog (1)" />
         <module name="banner" />
         <module name="spring-boot-study-log" />
+        <module name="helloworld" />
+        <module name="service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="helloworld" target="1.8" />
-      <module name="service" target="1.8" />
-      <module name="spring-boot-study" target="1.5" />
       <module name="spring-boot-study-diyerrpage" target="1.8" />
       <module name="thymeleaf (1)" target="1.8" />
     </bytecodeTargetLevel>
@@ -53,6 +53,7 @@
       <module name="spring-boot-study-freemarker" options="-parameters" />
       <module name="spring-boot-study-log" options="-parameters" />
       <module name="spring-boot-study-multienv" options="-parameters" />
+      <module name="spring-boot-study-redis" options="-parameters" />
       <module name="spring-boot-study-thymeleaf" options="-parameters" />
       <module name="springstudy" options="-parameters" />
       <module name="throwable" options="-parameters" />

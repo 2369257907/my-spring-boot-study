@@ -14,8 +14,8 @@ import java.util.HashMap;
 public class IndexController {
 
     @RequestMapping("/index")
-    public String index(Model model){
-        model.addAttribute("hello","hello freemarker");
+    public String index(Model model) {
+        model.addAttribute("hello", "hello freemarker");
         return "index";
     }
 }

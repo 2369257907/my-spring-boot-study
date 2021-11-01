@@ -18,7 +18,7 @@ public class UserController {
     private UserMapper userMapper;
 
     @RequestMapping("/queryUserList")
-    public List<User> queryUserList(){
+    public List<User> queryUserList() {
         List<User> userList = new ArrayList<>();
         userList = userMapper.findAllUser();
         return userList;

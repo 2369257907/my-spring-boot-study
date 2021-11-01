@@ -19,27 +19,27 @@ public class WebLogAspect {
 
     /**
      * 指定 controller 包下的注解
-     ** 切入点为conntroller下的包
-     * */
-        @Pointcut("execution( * com.fishpro.aoplog.controller.*.*(..))")//两个..代表所有子目录，最后括号里的两个..代表所有参数
-        public void logPointCut() {
+     * * 切入点为conntroller下的包
+     */
+    @Pointcut("execution( * com.fishpro.aoplog.controller.*.*(..))")//两个..代表所有子目录，最后括号里的两个..代表所有参数
+    public void logPointCut() {
 
-        }
+    }
 
-        /**
-         * 指定当前执行方法在logPointCut之前执行
-         * */
-        @Before("logPointCut()")
-        public void doBefore(JoinPoint joinPoint) throws Throwable{
-            // 接收到请求，记录请求内容
-            ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-            HttpServletRequest request = attributes.getRequest();
-            System.out.println("change change");
-            System.out.println("change");
-            // 记录下请求内容
-            logger.info("请求地址地址是 : " + request.getRequestURL().toString());
+    /**
+     * 指定当前执行方法在logPointCut之前执行
+     */
+    @Before("logPointCut()")
+    public void doBefore(JoinPoint joinPoint) throws Throwable {
+        // 接收到请求，记录请求内容
+        ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        HttpServletRequest request = attributes.getRequest();
+        System.out.println("change change");
+        System.out.println("change");
+        // 记录下请求内容
+        logger.info("请求地址地址是 : " + request.getRequestURL().toString());
 
-            logger.info("HTTP METHOD : " + request.getMethod());
+        logger.info("HTTP METHOD : " + request.getMethod());
         // 获取真实的ip地址
         //logger.info("IP : " + IPAddressUtil.getClientIpAddress(request));
         logger.info("CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "."
@@ -47,9 +47,10 @@ public class WebLogAspect {
         logger.info("参数 : " + Arrays.toString(joinPoint.getArgs()));
         //loggger.info("参数 : " + joinPoint.getArgs());
     }
+
     /**
      * 指定在方法之后返回
-     * */
+     */
     @AfterReturning(returning = "ret", pointcut = "logPointCut()")// returning的值和doAfterReturning的参数名一致
     public void doAfterReturning(Object ret) throws Throwable {
         // 处理完请求，返回内容(返回值太复杂时，打印的是物理存储空间的地址)

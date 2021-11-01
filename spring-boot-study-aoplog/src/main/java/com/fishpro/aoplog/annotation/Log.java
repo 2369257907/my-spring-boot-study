@@ -7,10 +7,10 @@ import java.lang.annotation.Target;
 
 /**
  * 使用@interface将定义一个注解 这里是log
+ *
  * @author 86171
  * @Target(ElementType.METHOD) 指定注解应用于方法上
- *
- * */
+ */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Log {
