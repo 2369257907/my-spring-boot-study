@@ -22,8 +22,8 @@ public class RedisController {
 
     @RequestMapping ("/set")
     public String set() {
-        redisTemplate.opsForValue().set("mykey","guo");
-        return "guo";
+        redisTemplate.opsForValue().set("mykey","change");
+        return "change";
     }
 
     @RequestMapping("/get")

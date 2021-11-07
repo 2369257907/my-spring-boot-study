@@ -17,4 +17,7 @@ import java.util.List;
 public interface UserMapper {
     @Select("SELECT * FROM User ")
     ArrayList<User> findAllUser();
+
 }
+
+
