@@ -8,10 +8,11 @@
 </head>
 <body>
 <style>
-    .modal-backdrop{z-index:0;}
+    .modal-backdrop {
+        z-index: 0;
+    }
 </style>
 　
-
 
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -21,6 +22,7 @@
 <script type="text/javascript">
   $(function a() {
     var tableColumns = [
+      {checkbox: true},
       {field: 'id', title: 'id', sortable: true},
       {field: 'name', title: '姓名', sortable: true},
       {field: 'pwd', title: '密码', sortable: true},
@@ -50,7 +52,7 @@
       method: 'get',
       pageSize: 10,
       pageNumber: 1,
-      pageList: [10, 20, 30,50],
+      pageList: [10, 20, 30, 50],
       cache: false,
       striped: true,
       pagination: true,
@@ -62,6 +64,7 @@
       // exportTypes: ['csv', 'txt', 'xml'],
       clickToSelect: true,
 
+
     });
 
   });
@@ -70,11 +73,11 @@
     var id = row.id;
     var result = "";
     result += "<a href='javascript:;' class='btn btn-xs blue' onclick=\"EditViewById('" + id + "')\" title='编辑'><span class='glyphicon glyphicon-pencil'></span></a>";
-    result += "<a href='javascript:;' class='btn btn-xs ' onclick=\"DeleteByIds('" + id + "')\" title='删除'><span class='glyphicon glyphicon-remove' style='color:#ef8181;'></span></a>";
+    result += "<a href='javascript:;' class='btn btn-xs ' onclick=\"DeleteOneById('" + id + "')\" title='删除'><span class='glyphicon glyphicon-remove' style='color:#ef8181;'></span></a>";
     return result;
   }
 
-  function DeleteByIds(id) {
+  function DeleteOneById(id) {
     var msg = "您确定要删除这条信息吗？";
     if (confirm(msg) == true) {
       $.ajax({
@@ -83,26 +86,57 @@
         dataType: "JSON",
         url: "/deleteUser",
         data: {'id': id},
-        cache:false,
+        cache: false,
         async: false,
         // success:function(msg){
         //   console.log(msg);
         // }
-
       });
-      window.location.reload();
-      // $('#tableL01').bootstrapTable('load');
-      $('#tableL01').bootstrapTable('refresh');
+      // window.location.reload();
+      $('#tableL01').bootstrapTable('refresh', {url: "/student"});
+    }
+    ;
+  }
 
-    };
 
+  function deleteByIds() {
+    if (!confirm("是否确认删除？")) {
+      return;
+    }
+    var rows = $("#tableL01").bootstrapTable('getSelections');// 获得要删除的数据
+    if (rows.length === 0) {// rows 主要是为了判断是否选中，下面的else内容才是主要
+      alert("请先选择要删除的记录!");
+    } else {
+      var ids = [];// 声明一个数组
+      $(rows).each(function () {// 通过获得别选中的来进行遍历
+        ids.push(this.id);// cid为获得到的整条数据中的一列
+      });
+      // alert(JSON.stringify(ids));
+      $.ajax({
+        timeout: 20000,
+        type: "POST",
+        dataType: "JSON",
+        url: "/deleteByIds",
+        data: {"ids":JSON.stringify(ids)},
+        cache: false,
+        async: false,
+        // success:function(msg){
+        //   console.log(msg);
+        // }
+      });
+      // window.location.reload();
+      $('#tableL01').bootstrapTable('refresh', {url: "/student"});
+    }
 
   }
-</script>
 
+</script>
 <!-- 按钮触发模态框 -->
 <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal">
     添加用户
+</button>
+<button class="btn btn-primary btn-sm " id="remove" onclick="deleteByIds()">
+    批量删除
 </button>
 <!-- 模态框（Modal） -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -126,10 +160,10 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label  class="col-sm-2 control-label">密码</label>
+                        <label class="col-sm-2 control-label">密码</label>
                         <div class="col-sm-4">
                             <input type="password" class="form-control" name="pwd"
-                                   placeholder="请输入密码" >
+                                   placeholder="请输入密码">
                         </div>
                     </div>
                     <div class="form-group">
@@ -147,7 +181,7 @@
     </div><!-- /.modal -->
 </div>
 
-          <!------------------------------------表格----------------->
+<!------------------------------------表格----------------->
 <table class="table table-striped table-bordered table-hover" id="tableL01"></table>
 <!--<form action="/deleteUser" method="post">-->
 <!--    <input type="text" name="id">-->

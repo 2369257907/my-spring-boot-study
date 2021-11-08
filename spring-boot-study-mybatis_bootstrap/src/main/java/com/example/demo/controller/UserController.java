@@ -1,9 +1,11 @@
 package com.example.demo.controller;
 
 
+
 import com.example.demo.Mapper.UserMapper;
 import com.example.demo.Util.GetMD5;
 import com.example.demo.pojo.User;
+import com.fasterxml.jackson.core.JsonParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,6 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @RestController
 public class UserController {
@@ -61,6 +65,24 @@ public class UserController {
         userMapper.register(name,pwd);
         return "已经提交注册";
     }
+
+    @RequestMapping("/deleteByIds")
+    public String deleteByIds(HttpServletRequest request){
+
+        String s = request.getParameter("ids");
+        System.out.println(s);
+        String regex = "\\d+";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(s);
+
+        while(matcher.find()){
+            userMapper.deleteById(Integer.valueOf(matcher.group(0)));
+            System.out.println(matcher.group(0));
+        }
+        return "/user.html";
+    }
+
+
 
 
 

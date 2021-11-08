@@ -24,6 +24,7 @@
         <module name="freemarker" />
         <module name="throwable" />
         <module name="aoplog (1)" />
+        <module name="demo (1)" />
         <module name="banner" />
         <module name="spring-boot-study-log" />
         <module name="helloworld" />
@@ -42,6 +43,7 @@
       <module name="banner" options="-parameters" />
       <module name="configrurationProperties" options="-parameters" />
       <module name="demo" options="-parameters" />
+      <module name="demo (1)" options="-parameters" />
       <module name="diyerrpage" options="-parameters" />
       <module name="freemarker" options="-parameters" />
       <module name="helloworld" options="-parameters" />
