@@ -1,0 +1,16 @@
+server:
+  port: 8093
+spring:
+  cache:
+    type: redis
+  redis:
+    host: 82.156.11.200
+    port: 6379
+    password:
+    database: 0
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        max-idle: 8
+        min-idle: 0
