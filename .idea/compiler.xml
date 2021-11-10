@@ -26,6 +26,7 @@
         <module name="aoplog (1)" />
         <module name="demo (1)" />
         <module name="banner" />
+        <module name="security" />
         <module name="spring-boot-study-log" />
         <module name="helloworld" />
         <module name="service" />
@@ -49,6 +50,7 @@
       <module name="helloworld" options="-parameters" />
       <module name="log" options="-parameters" />
       <module name="mybatis" options="-parameters" />
+      <module name="security" options="-parameters" />
       <module name="service" options="-parameters" />
       <module name="spring-boot-study-banner" options="-parameters" />
       <module name="spring-boot-study-diyerrpage" options="-parameters" />
