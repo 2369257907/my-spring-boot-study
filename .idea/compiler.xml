@@ -18,6 +18,7 @@
         <module name="spring-boot-study-freemarker" />
         <module name="spring-boot-study-multienv" />
         <module name="spring-boot-study-redis" />
+        <module name="security (1)" />
         <module name="aoplog" />
         <module name="spring-boot-study-banner" />
         <module name="mybatis" />
@@ -34,7 +35,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="security" target="1.8" />
+      <module name="demo (2)" target="1.8" />
       <module name="spring-boot-study-diyerrpage" target="1.8" />
       <module name="thymeleaf (1)" target="1.8" />
     </bytecodeTargetLevel>
@@ -54,6 +55,7 @@
       <module name="log" options="-parameters" />
       <module name="mybatis" options="-parameters" />
       <module name="security" options="-parameters" />
+      <module name="security (1)" options="-parameters" />
       <module name="service" options="-parameters" />
       <module name="spring-boot-study-banner" options="-parameters" />
       <module name="spring-boot-study-diyerrpage" options="-parameters" />
