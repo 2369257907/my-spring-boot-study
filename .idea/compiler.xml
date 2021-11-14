@@ -26,6 +26,7 @@
         <module name="aoplog (1)" />
         <module name="demo (1)" />
         <module name="banner" />
+        <module name="demo (2)" />
         <module name="security" />
         <module name="spring-boot-study-log" />
         <module name="helloworld" />
@@ -33,6 +34,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="security" target="1.8" />
       <module name="spring-boot-study-diyerrpage" target="1.8" />
       <module name="thymeleaf (1)" target="1.8" />
     </bytecodeTargetLevel>
@@ -45,6 +47,7 @@
       <module name="configrurationProperties" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="demo (1)" options="-parameters" />
+      <module name="demo (2)" options="-parameters" />
       <module name="diyerrpage" options="-parameters" />
       <module name="freemarker" options="-parameters" />
       <module name="helloworld" options="-parameters" />
