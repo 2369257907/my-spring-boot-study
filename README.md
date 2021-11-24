@@ -1,2 +1,2 @@
 # my-spring-boot-study
-个人学习SPringboot笔记
+个人学习Springboot笔记
